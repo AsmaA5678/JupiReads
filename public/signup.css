@@ -1,0 +1,106 @@
+@import url('https://fonts.cdnfonts.com/css/baloo');
+
+.container {
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(50%, -50%);
+}
+
+.container1 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: #FECC02; 
+    border-radius: 50%;
+    width: 1000px; 
+    height: 1000px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-family: 'BalooBhaina', sans-serif;
+    color: white;
+}
+
+.container1 h1, .container1 p {
+    margin: 5px;
+    margin-left: 250px; 
+}
+.container1 h1 {
+   margin-top: 150px;
+   font-size: 50px; 
+}
+.container1 p {
+    font-size: 40px; 
+ }
+.link-container {
+    width: 150px;
+    height: 60px;
+    background-color: #FECC02;
+    border-radius: 30px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    margin-left: 250px; 
+}
+
+.link-container div {
+    color: white;
+    font-family: 'BalooBhaina', sans-serif;
+    font-size: 30px;
+}
+.container1 img {
+    width: 200px; 
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 230px;
+}
+.container h1 {
+    font-family: 'BalooBhaina' , sans-serif; 
+    font-size: 30px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    
+}
+/* inputs */
+.container input:not(.sub) {
+    border-radius: 20px;
+    margin-bottom: 10px; 
+    background-color: #ECECEC;
+    width: 300px; 
+    height: 40px; 
+    display: block; 
+    border: none;
+    margin-bottom: -10px;
+
+}
+.container input:not(.sub)::placeholder {
+    font-family: 'BalooBhaina', sans-serif; 
+}
+.container input[name="dateOfBirth"]::placeholder {
+    font-family: 'BalooBhaina', sans-serif;
+}
+.container input.sub {
+    background-color: white; 
+    border: 2px solid black; 
+    border-radius: 25px; 
+    font-family: 'BalooBhaina', sans-serif; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+    width: 100px; 
+    height: 50px;
+    color: black; 
+}
+
+.container input.sub:hover {
+    background-color: #FECC02; 
+}
