@@ -11,20 +11,28 @@
   <div class="container" id="container">
     <form action="/signup" method="post" >
         <h1>Sign Up</h1>
-        <input placeholder="Name" name="name" type="text">
-        <br>
-        <input placeholder="Password" name="password" type="password">
-        <br>
-        <input placeholder="CIN" name="cin" type="text"> 
-        <br>
-        <input placeholder="Email" name="email" type="email"> 
-        <br>
-        <input placeholder="Phone Number" name="numTel" type="tel"> 
-        <br>
-        <input placeholder="Address" name="adresse" type="text"> 
-        <br>
-        <input placeholder="Date of Birth" name="dateOfBirth" type="date"> 
-        <br>
+        <div class="name-container">
+            <input placeholder="Name" name="name" type="text" >
+        </div>
+        <div class="cin-container">
+           <input placeholder="CIN" name="cin" type="text"> 
+        </div>
+        <div class="email-container">
+            <input placeholder="Email" name="email" type="email"> 
+        </div>
+        <div class="password-container"> 
+            <input placeholder="Password" name="password" type="password" id="password">
+            <span class="toggle-password" onclick="togglePasswordVisibility()"></span> 
+        </div>
+        <div class="numtel-container">
+            <input placeholder="Phone Number" name="numTel" type="tel"> 
+        </div>
+        <div class="adresse-container">
+            <input placeholder="Country" name="adresse" type="text"> 
+        </div>
+        <div class="dateOfBirth-container">
+            <input placeholder="Date of Birth" name="dateOfBirth" type="date"> 
+        </div>
         <input class="sub" type="submit" value="Sign up">
     </form>
   </div>
@@ -38,7 +46,16 @@
             </a>
              <img src="/images/icon.png" alt="Description de l'image">
   </div>
-     
+  <script>
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    }
+</script>
 
 </body>
 </html>

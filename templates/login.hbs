@@ -8,22 +8,40 @@
     <link rel="stylesheet" href="/login.css">
 </head>
 <body>
-
-    <h1>Login Form</h1>
-
+<div class="container" id="container">
     <form action="/login" method="post" >
-        <input placeholder="Name" name="name" type="text">
-        <br>
-        <input placeholder="Email" name="email" type="email">
-        <br>
-        <input placeholder="Password" name="password" type="password">
-        <br>
-        <input class="sub" type="submit">
-     <h3>Dont have a account ?</h3>
-    <a href="/signup">Create a new account</a>
-    </form>
-
-
-    
+        <h1>Sign in</h1>
+        <div class="name-container">
+                <input placeholder="Name" name="name" type="text">
+        </div>
+        <div class="email-container">
+                <input placeholder="Email" name="email" type="email">
+        </div>
+        <div class="password-container"> 
+                <input placeholder="Password" name="password" type="password">
+                <span class="toggle-password" onclick="togglePasswordVisibility()"></span> 
+        </div>
+        <input class="sub" type="submit" value="Sign in">
+</div>
+<div class="container1" id="container1">
+     <h1>New here ?</h1>
+     <p>Welcome</p>
+    <a href="/signup" class="link-container">
+            <div>
+             Sign up
+             </div>
+    </a>
+     <img src="/images/icon.png" alt="Description de l'image">
+</div>
+<script>
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    }
+</script>
 </body>
 </html>
